@@ -28,6 +28,9 @@ def registrar_usuario():
 
 
 
+####################################################################################
+
+
 # Función para mostrar la lista de usuarios registrados
 def mostrar_usuarios():
     # Abrimos el archivo que contiene la base de datos de usuarios
@@ -37,6 +40,9 @@ def mostrar_usuarios():
     print("Lista de usuarios:")
     for nombre, contrasena in base_de_datos.items():
         print(f"{nombre}: {contrasena}")
+    
+
+####################################################################################
 
 # Función para hacer login
 def hacer_login():
@@ -60,8 +66,6 @@ def hacer_login():
 
     # Si el usuario y la contraseña son correctos, le damos la bienvenida
     print(f"Bienvenido, {nombre}!")
-
-
 
 
 ############################################################################
